@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
-public class Formatter {
+public interface Formatter {
+    String format(String reportTitle, String reportContent);
 }
