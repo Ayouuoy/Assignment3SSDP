@@ -5,3 +5,4 @@ src/AttendanceReport.java
 src/GradeReport.java
 src/TextFormatter.java
 src/HtmlFormatter.java
+src/MarkdownFormatter.java

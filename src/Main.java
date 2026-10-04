@@ -14,6 +14,7 @@ public class Main {
     private static void runDemo() {
         Formatter textFormatter = new TextFormatter();
         Formatter htmlFormatter = new HtmlFormatter();
+        Formatter markdownFormatter = new MarkdownFormatter();
 
         AttendanceReport attendanceText =
                 new AttendanceReport("A-101", textFormatter, 3, 4);
@@ -56,6 +57,30 @@ public class Main {
         );
 
         checkRuntimeSwitch(textFormatter, htmlFormatter);
+
+        AttendanceReport attendanceMarkdown =
+                new AttendanceReport("A-103", markdownFormatter, 3, 4);
+
+        check(
+                "T6",
+                "AttendanceReport + MarkdownFormatter",
+                attendanceMarkdown.execute(),
+                "# Attendance Report\n\n3/4 sessions attended (75%)"
+        );
+
+        GradeReport gradeMarkdown =
+                new GradeReport(
+                        "G-103",
+                        markdownFormatter,
+                        new int[]{70, 80, 90}
+                );
+
+        check(
+                "T7",
+                "GradeReport + MarkdownFormatter",
+                gradeMarkdown.execute(),
+                "# Grade Report\n\naverage of 70, 80, 90 = 80"
+        );
 
         System.out.println(
                 "SUMMARY: " + passedChecks + "/" + totalChecks + " PASS"
