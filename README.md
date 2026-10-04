@@ -91,7 +91,6 @@ src/
 
 sources.txt
 README.md
-report.pdf
 demo-output.txt
 extension.diff
 ```
