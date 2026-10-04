@@ -1,11 +1,5 @@
 # Assignment 3 - Bridge Pattern
 
-Student: Zhumabay Aikyn
-Group: SE-2523
-Topic: C - Reports
-GitHub Repository: YOUR_GITHUB_LINK
-Base Commit: YOUR_BASE_COMMIT_HASH
-
 ## About Project
 
 This project demonstrates the Bridge design pattern.
@@ -58,13 +52,21 @@ SUMMARY: 7/7 PASS
 
 ## Build and Run
 
-Compile:
+The project uses JDK 17.
 
+Compile the project:
+
+```bash
 javac --release 17 -encoding UTF-8 -d out "@sources.txt"
+```
 
-Run:
+Run the demo:
 
+```bash
 java -cp out Main --demo
+```
+
+The program runs all checks automatically without user input.
 
 ## Extension
 
@@ -74,8 +76,22 @@ After the base commit, MarkdownFormatter was added.
 
 The existing Report classes and Formatter interface were not changed.
 
-## Bridge vs Adapter
+## Project Structure
 
-Bridge separates two parts of a program so they can change independently.
+```text
+src/
+    Main.java
+    Report.java
+    AttendanceReport.java
+    GradeReport.java
+    Formatter.java
+    TextFormatter.java
+    HtmlFormatter.java
+    MarkdownFormatter.java
 
-Adapter is used to connect classes with incompatible interfaces.
+sources.txt
+README.md
+report.pdf
+demo-output.txt
+extension.diff
+```
