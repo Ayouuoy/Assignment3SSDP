@@ -1,11 +1,5 @@
 # Assignment 3 - Bridge Pattern
 
-**Student:** Zhumabay Aikyn  
-**Group:** SE-2523  
-**Topic:** C - Reports  
-**GitHub Repository:** YOUR_GITHUB_LINK  
-**Base Commit:** YOUR_BASE_COMMIT_HASH  
-
 ## Project Description
 
 This project demonstrates the Bridge design pattern using reports and different formatting methods.
